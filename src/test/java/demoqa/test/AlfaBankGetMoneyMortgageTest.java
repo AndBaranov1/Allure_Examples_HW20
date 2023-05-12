@@ -1,5 +1,8 @@
 package demoqa.test;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -7,9 +10,12 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
+@Owner("baranov_aa")
+@Feature("Issues")
 @Tags({@Tag("main")})
 public class AlfaBankGetMoneyMortgageTest extends TestBase {
 
+    @Story("Create new issue")
     @DisplayName("Display results when searching for Credit")
     @Test
     void searchResultsCredit() {
@@ -26,6 +32,7 @@ public class AlfaBankGetMoneyMortgageTest extends TestBase {
         });
     }
 
+    @Story("Create new issue")
     @DisplayName("Display results when searching for Investments")
     @Test
     void searchResultsInvestments() {
@@ -42,6 +49,7 @@ public class AlfaBankGetMoneyMortgageTest extends TestBase {
         });
     }
 
+    @Story("Create new pull request")
     @DisplayName("Savings account form display")
     @Test
     void checkConnectivity() {
@@ -59,6 +67,7 @@ public class AlfaBankGetMoneyMortgageTest extends TestBase {
         });
     }
 
+    @Story("Create new issue")
     @DisplayName("Payment schedule display")
     @Test
     void ipotecaPayment() {
@@ -83,6 +92,7 @@ public class AlfaBankGetMoneyMortgageTest extends TestBase {
         });
     }
 
+    @Story("Create new pull request")
     @DisplayName("Find out your mortgage limit")
     @Test
     void findMortgageLimit() {
